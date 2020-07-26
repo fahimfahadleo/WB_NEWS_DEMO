@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/thumbnil"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/news_logo" />
+
+
+            <TextView
+                android:id="@+id/titleen"
+                android:layout_width="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnil"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Title English"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/titlebn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_below="@id/titleen"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Title Bangla"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/view2"
+                android:layout_below="@id/titlebn"
+                android:layout_height="15dp"
+                android:background="#f2f2f2"/>
+
+            <TextView
+                android:id="@+id/descriptionEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_centerHorizontal="true"
+                android:gravity="start"
+                android:layout_margin="4dp"
+                android:maxLength="120"
+                android:text="Description \n \n \n This is the Description"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/view"
+                android:layout_below="@id/descriptionEn"
+                android:layout_height="15dp"
+                android:background="#f2f2f2"/>
+
+            <TextView
+                android:id="@+id/descriptionBn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_centerHorizontal="true"
+                android:gravity="start"
+                android:layout_margin="4dp"
+                android:maxLength="120"
+                android:layout_marginBottom="8dp"
+                android:text="Description \n \n \n This is the Bangla Description"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/updateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionBn"
+                android:layout_centerHorizontal="true"
+                android:gravity="start"
+                android:layout_margin="4dp"
+                android:maxLength="120"
+                android:layout_marginBottom="8dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
